@@ -100,7 +100,7 @@ Replace `your_password` with your MySQL password.
 ## How to Run the Project
 
 1. Clone the repository
-2. Open the project in IntelliJ IDEA or VS Code
+2. Open the project in IntelliJ IDEA
 3. Create the database and tables in MySQL
 4. Update database credentials in `DBConnection.java`
 5. Run `Main.java`
