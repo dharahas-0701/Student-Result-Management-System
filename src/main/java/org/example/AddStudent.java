@@ -26,8 +26,11 @@ public class AddStudent {
 
             System.out.print("Enter Semester: ");
             int sem = sc.nextInt();
+            sc.nextLine();
+            System.out.print("Set password: ");
+            String pass = sc.nextLine();
 
-            String query = "INSERT INTO students VALUES (?, ?, ?, ?)";
+            String query = "INSERT INTO students VALUES (?, ?, ?, ?, ?)";
 
             PreparedStatement ps = con.prepareStatement(query);
 
@@ -35,6 +38,7 @@ public class AddStudent {
             ps.setString(2, name);
             ps.setString(3, dept);
             ps.setInt(4, sem);
+            ps.setString(5, pass);
 
             ps.executeUpdate();
 
